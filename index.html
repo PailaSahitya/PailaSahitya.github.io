@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sahitya — Frontend & WordPress Developer</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Sahitya - Frontend developer specializing in Angular, WordPress, and UI/UX design." />
+  <meta name="description" content="Sahitya - Frontend developer (Angular), WordPress specialist, Figma designer. Profved & ZuraLabs." />
 </head>
 <body>
-  <div class="site">
+  <div class="wrap">
     <nav class="nav">
       <div class="brand">Sahitya</div>
       <ul class="nav-links">
@@ -21,48 +21,58 @@
     <header class="hero">
       <div class="hero-inner">
         <div class="hero-left">
-          <h1>Hi, I'm <span class="accent">Sahitya</span></h1>
-          <p class="lead">Frontend Developer • WordPress Specialist • UI/UX Designer</p>
-          <p class="ctas">
-            <a href="#projects" class="btn primary">View Work</a>
-            <a href="#contact" class="btn outline">Hire Me</a>
-          </p>
+          <h1>Hi — I'm <span class="neon">Sahitya</span></h1>
+          <p class="lead">Frontend Engineer • WordPress Specialist • UI/UX Designer (Figma & Canva)</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Let's Talk</a>
+          </div>
+          <ul class="chips">
+            <li>Angular</li><li>WordPress</li><li>Figma</li><li>Responsive UI</li>
+          </ul>
         </div>
+
         <div class="hero-right">
-          <div class="card-stacked">
-            <div class="card card-1">
-              <div class="card-title">Profved</div>
-              <div class="card-sub">WordPress • UX Improvements</div>
-            </div>
-            <div class="card card-2">
-              <div class="card-title">ZuraLabs</div>
-              <div class="card-sub">Frontend • Theme Customization</div>
+          <!-- profile preview (uses your screenshot if you want): -->
+          <div class="profile-shell">
+            <img src="portfolio_thumbnails/project-profved.jpg" alt="profile preview" class="profile-img" />
+            <div class="profile-meta">
+              <div class="p-title">Worked On</div>
+              <div class="p-items">profved.com · zuralabs.com · 2 Angular projects</div>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="container">
+    <main class="main container">
       <section id="about" class="section about">
-        <div class="split">
-          <div>
+        <div class="about-grid">
+          <div class="about-left card">
             <h2>About Me</h2>
-            <p>I build polished, responsive websites with <strong>Angular</strong> and <strong>WordPress</strong>. I create UI/UX designs in <strong>Figma</strong> and branded graphics in <strong>Canva</strong>. I enjoy solving frontend problems and shipping high-quality, maintainable interfaces.</p>
-            <ul class="bullets">
-              <li>Angular | HTML | CSS | JavaScript</li>
-              <li>WordPress: themes, Elementor, plugins</li>
-              <li>Figma & Canva: prototypes & marketing graphics</li>
+            <p>I build polished, performant frontends and solve tricky WordPress issues — themes, plugins, responsive bugs and migrations. I design UI flows in <strong>Figma</strong> and create marketing assets in <strong>Canva</strong>.</p>
+            <ul class="about-list">
+              <li>Angular, HTML, CSS, JS</li>
+              <li>WordPress (Elementor, PHP basics, theme/plugin fixes)</li>
+              <li>Figma & Canva for UI/marketing</li>
             </ul>
           </div>
-          <div class="profile">
-            <div class="profile-box">
-              <div class="p-title">Experience</div>
-              <div class="p-value">Worked on profved.com & zuralabs.com, 2 Angular projects</div>
+
+          <div class="about-right">
+            <div class="stat card">
+              <div class="num">2</div>
+              <div class="label">Live Sites</div>
+              <div class="muted">profved.com · zuralabs.com</div>
             </div>
-            <div class="profile-box">
-              <div class="p-title">Location</div>
-              <div class="p-value">Andhra Pradesh, India — remote</div>
+            <div class="stat card">
+              <div class="num">2</div>
+              <div class="label">Angular Projects</div>
+              <div class="muted">Dashboard & API integrations</div>
+            </div>
+            <div class="stat card">
+              <div class="num">UI</div>
+              <div class="label">Designer</div>
+              <div class="muted">Figma & Canva</div>
             </div>
           </div>
         </div>
@@ -71,59 +81,60 @@
       <section id="projects" class="section projects">
         <h2>Selected Projects</h2>
         <div class="grid">
-          <article class="proj">
+          <!-- NOTE: ensure these files are uploaded under /portfolio_thumbnails/ in your repo -->
+          <article class="proj card">
             <img src="portfolio_thumbnails/project-profved.jpg" alt="Profved" />
             <div class="meta">
               <h3>Profved — Corporate Site</h3>
-              <p>WordPress customization, responsive fixes, and UI improvements.</p>
-              <a class="visit" href="https://www.profved.com" target="_blank">Visit</a>
+              <p>WordPress customization, responsive fixes, UX improvements.</p>
+              <a class="link" href="https://www.profved.com" target="_blank">Visit</a>
             </div>
           </article>
 
-          <article class="proj">
+          <article class="proj card">
             <img src="portfolio_thumbnails/project-zuralabs.jpg" alt="ZuraLabs" />
             <div class="meta">
-              <h3>ZuraLabs — Technology</h3>
-              <p>Frontend development, theme tweaks, and layout optimizations.</p>
-              <a class="visit" href="https://www.zuralabs.com" target="_blank">Visit</a>
+              <h3>ZuraLabs — Technology Site</h3>
+              <p>Frontend component work, theme tweaks and layout optimization.</p>
+              <a class="link" href="https://www.zuralabs.com" target="_blank">Visit</a>
             </div>
           </article>
 
-          <article class="proj">
+          <article class="proj card">
             <img src="portfolio_thumbnails/project-angular1.jpg" alt="Angular Dashboard" />
             <div class="meta">
               <h3>Angular Dashboard</h3>
-              <p>Dashboard UI with components, routing and responsive design.</p>
+              <p>Responsive dashboard UI built with Angular components and routing.</p>
             </div>
           </article>
 
-          <article class="proj">
+          <article class="proj card">
             <img src="portfolio_thumbnails/project-angular2.jpg" alt="Angular API" />
             <div class="meta">
-              <h3>Angular – API Integration</h3>
-              <p>Reusable components and REST API integrations.</p>
+              <h3>Angular — API Integration</h3>
+              <p>Reusable components, API calls, and dynamic UI states.</p>
             </div>
           </article>
 
-          <article class="proj">
+          <article class="proj card">
             <img src="portfolio_thumbnails/project-figma.jpg" alt="Figma Design" />
             <div class="meta">
-              <h3>Figma Landing Page</h3>
-              <p>High-fidelity landing page design and prototype.</p>
+              <h3>Figma — Landing Page</h3>
+              <p>High-fidelity landing page design and interactive prototype.</p>
             </div>
           </article>
 
-          <article class="proj">
-            <img src="portfolio_thumbnails/project-canva.jpg" alt="Canva Design" />
+          <article class="proj card">
+            <img src="portfolio_thumbnails/project-canva.jpg" alt="Canva" />
             <div class="meta">
-              <h3>Canva – Branding</h3>
-              <p>Social graphics, thumbnails and marketing banners.</p>
+              <h3>Canva — Branding & Social</h3>
+              <p>Thumbnails, banners and marketing graphics for company social channels.</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="contact" class="section contact">
+      <section id="contact" class="section contact card">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
         <p>GitHub: <a href="https://github.com/PailaSahitya" target="_blank">github.com/PailaSahitya</a></p>
@@ -131,7 +142,10 @@
       </section>
     </main>
 
-    <footer class="footer">© <span id="year"></span> Sahitya — Frontend & WordPress Developer</footer>
+    <footer class="footer">
+      <div class="f-left">© <span id="year"></span> Sahitya</div>
+      <div class="f-right">Designed with a cyber-neon style · Angular · WordPress</div>
+    </footer>
   </div>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
