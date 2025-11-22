@@ -1,128 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sahitya – Frontend & WordPress Developer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sahitya — Frontend & WordPress Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Sahitya - Frontend developer specializing in Angular, WordPress, and UI/UX design." />
 </head>
-
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Hi, I'm <span class="accent">Sahitya</span></h1>
-      <p class="subtitle">Frontend Developer • WordPress Specialist • UI/UX Designer</p>
-      <p class="cta">
-        <a href="#projects">See My Work</a>
-        <a href="tel:8790944629" class="outline">Hire Me</a>
-      </p>
-    </div>
-  </header>
-
-  <main class="container">
-
-    <!-- ABOUT SECTION -->
-    <section id="about" class="card">
-      <h2>About Me</h2>
-      <p>
-        I’m a Frontend & WordPress Developer with experience building modern, responsive websites. 
-        I have worked on **profved.com**, **zuralabs.com**, 2 Angular projects, and multiple 
-        UI/UX designs using **Figma** and **Canva**.  
-        I enjoy building clean UIs, fixing WordPress issues, and converting ideas into working products.
-      </p>
-
-      <h3>Skills</h3>
-      <ul class="skills">
-        <li>Angular</li>
-        <li>HTML / CSS / JavaScript</li>
-        <li>WordPress Development</li>
-        <li>Theme & Plugin Customization</li>
-        <li>Responsive Web Design</li>
-        <li>Figma UI/UX Design</li>
-        <li>Canva Branding & Graphics</li>
+  <div class="site">
+    <nav class="nav">
+      <div class="brand">Sahitya</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-
-      <div class="grid">
-
-        <!-- Profved -->
-        <div class="proj">
-          <img src="project-profved.jpg" alt="Profved website">
-          <h3>Profved – Corporate Website</h3>
-          <p>
-            Built & customized pages in WordPress, improved UI layouts, and handled page designs & responsiveness.
-          </p>
-          <a class="visit" href="https://www.profved.com" target="_blank">Visit Website</a>
-        </div>
-
-        <!-- ZuraLabs -->
-        <div class="proj">
-          <img src="project-zuralabs.jpg" alt="ZuraLabs website">
-          <h3>ZuraLabs – Technology Website</h3>
-          <p>
-            Worked on frontend UI components, WordPress customization, and content structure improvements.
-          </p>
-          <a class="visit" href="https://www.zuralabs.com" target="_blank">Visit Website</a>
-        </div>
-
-        <!-- Angular Projects -->
-        <div class="proj">
-          <img src="project-angular1.jpg" alt="Angular Project">
-          <h3>Angular Project – Dashboard UI</h3>
-          <p>
-            Built a modern, responsive Angular dashboard with dynamic components and routing.
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1>Hi, I'm <span class="accent">Sahitya</span></h1>
+          <p class="lead">Frontend Developer • WordPress Specialist • UI/UX Designer</p>
+          <p class="ctas">
+            <a href="#projects" class="btn primary">View Work</a>
+            <a href="#contact" class="btn outline">Hire Me</a>
           </p>
         </div>
-
-        <div class="proj">
-          <img src="project-angular2.jpg" alt="Angular Project">
-          <h3>Angular Project – API Integration</h3>
-          <p>
-            Created UI screens, integrated REST APIs, and designed reusable components.
-          </p>
+        <div class="hero-right">
+          <div class="card-stacked">
+            <div class="card card-1">
+              <div class="card-title">Profved</div>
+              <div class="card-sub">WordPress • UX Improvements</div>
+            </div>
+            <div class="card card-2">
+              <div class="card-title">ZuraLabs</div>
+              <div class="card-sub">Frontend • Theme Customization</div>
+            </div>
+          </div>
         </div>
-
-        <!-- UI/UX Designs -->
-        <div class="proj">
-          <img src="project-figma.jpg" alt="Figma Design">
-          <h3>Figma – Landing Page Design</h3>
-          <p>
-            Designed a full landing page with components, color palettes, and modern layout.
-          </p>
-        </div>
-
-        <div class="proj">
-          <img src="project-canva.jpg" alt="Canva Design">
-          <h3>Canva – Social Media & Branding</h3>
-          <p>
-            Created banners, thumbnails, and brand graphics for various businesses.
-          </p>
-        </div>
-
       </div>
-    </section>
+    </header>
 
-    <!-- CONTACT -->
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:sahityapaila333@gmail.com">sahityapaila333@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/PailaSahitya" target="_blank">github.com/PailaSahitya</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/sahityapaila/" target="_blank">https://www.linkedin.com/in/sahityapaila/</a></p>
-    </section>
+    <main class="container">
+      <section id="about" class="section about">
+        <div class="split">
+          <div>
+            <h2>About Me</h2>
+            <p>I build polished, responsive websites with <strong>Angular</strong> and <strong>WordPress</strong>. I create UI/UX designs in <strong>Figma</strong> and branded graphics in <strong>Canva</strong>. I enjoy solving frontend problems and shipping high-quality, maintainable interfaces.</p>
+            <ul class="bullets">
+              <li>Angular | HTML | CSS | JavaScript</li>
+              <li>WordPress: themes, Elementor, plugins</li>
+              <li>Figma & Canva: prototypes & marketing graphics</li>
+            </ul>
+          </div>
+          <div class="profile">
+            <div class="profile-box">
+              <div class="p-title">Experience</div>
+              <div class="p-value">Worked on profved.com & zuralabs.com, 2 Angular projects</div>
+            </div>
+            <div class="profile-box">
+              <div class="p-title">Location</div>
+              <div class="p-value">Andhra Pradesh, India — remote</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  </main>
+      <section id="projects" class="section projects">
+        <h2>Selected Projects</h2>
+        <div class="grid">
+          <article class="proj">
+            <img src="portfolio_thumbnails/project-profved.jpg" alt="Profved" />
+            <div class="meta">
+              <h3>Profved — Corporate Site</h3>
+              <p>WordPress customization, responsive fixes, and UI improvements.</p>
+              <a class="visit" href="https://www.profved.com" target="_blank">Visit</a>
+            </div>
+          </article>
 
-  <footer class="footer">
-    <div class="container">© <span id="year"></span> Sahitya — All Rights Reserved</div>
-  </footer>
+          <article class="proj">
+            <img src="portfolio_thumbnails/project-zuralabs.jpg" alt="ZuraLabs" />
+            <div class="meta">
+              <h3>ZuraLabs — Technology</h3>
+              <p>Frontend development, theme tweaks, and layout optimizations.</p>
+              <a class="visit" href="https://www.zuralabs.com" target="_blank">Visit</a>
+            </div>
+          </article>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+          <article class="proj">
+            <img src="portfolio_thumbnails/project-angular1.jpg" alt="Angular Dashboard" />
+            <div class="meta">
+              <h3>Angular Dashboard</h3>
+              <p>Dashboard UI with components, routing and responsive design.</p>
+            </div>
+          </article>
 
+          <article class="proj">
+            <img src="portfolio_thumbnails/project-angular2.jpg" alt="Angular API" />
+            <div class="meta">
+              <h3>Angular – API Integration</h3>
+              <p>Reusable components and REST API integrations.</p>
+            </div>
+          </article>
+
+          <article class="proj">
+            <img src="portfolio_thumbnails/project-figma.jpg" alt="Figma Design" />
+            <div class="meta">
+              <h3>Figma Landing Page</h3>
+              <p>High-fidelity landing page design and prototype.</p>
+            </div>
+          </article>
+
+          <article class="proj">
+            <img src="portfolio_thumbnails/project-canva.jpg" alt="Canva Design" />
+            <div class="meta">
+              <h3>Canva – Branding</h3>
+              <p>Social graphics, thumbnails and marketing banners.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
+        <p>GitHub: <a href="https://github.com/PailaSahitya" target="_blank">github.com/PailaSahitya</a></p>
+        <p>LinkedIn: <a href="#" target="_blank">Add your LinkedIn</a></p>
+      </section>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> Sahitya — Frontend & WordPress Developer</footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
