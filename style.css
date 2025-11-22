@@ -1,0 +1,132 @@
+:root {
+  --accent: #e63946;
+  --bg: #f4f4f7;
+  --card: #ffffff;
+  --text: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #ffffff, #fdf4f4);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.cta a {
+  display: inline-block;
+  margin: 15px 8px;
+  padding: 10px 18px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta .outline {
+  background: #fff;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #f0f0f0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* PROJECT GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.proj {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.proj img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.proj h3 {
+  margin: 10px 0 5px;
+}
+
+.visit {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 25px;
+  color: #555;
+  font-size: 0.9rem;
+}
